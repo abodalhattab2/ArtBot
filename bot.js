@@ -8,7 +8,6 @@ const giphy = require('giphy-api')();
 const googl = require('goo.gl');  
 const translate = require('google-translate-api');   
 const fs = require("fs"); 
-const canvas = require("canvas");
 const getYoutubeID = require('get-youtube-id'); 
 const moment = require("moment");  
 const { Client, Util } = require('discord.js');  
@@ -269,8 +268,7 @@ client.on("message", function(msg) {
     msg.channel.send({ embed: embed });
   }
 });
-    }
-});
+    
  client.on('message', message => {
     if (message.content.startsWith(prefix + "bot")) {
     message.channel.send({
@@ -3505,4 +3503,4 @@ client.on('guildMemberAdd', member => {
 return channel.send("")
     }
     )});
-client.login(process.env.BOT_TOKEN)
+client.login('NjIwNjc0NzE0ODkzMDI1MzEw.Xb3O2Q.y-DHc4e6KStFl4xm_Ji3kbBU35Y')
